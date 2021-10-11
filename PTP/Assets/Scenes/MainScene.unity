@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 435727271}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Cube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,8 +155,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb47a3b4797b404b901284393e05342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubeName: 
-  cubeMaterial: {fileID: 0}
+  colors:
+  - {fileID: 2100000, guid: cd56516b819d3414ba26c6b79e8d9211, type: 2}
+  - {fileID: 2100000, guid: 5574690b7444658438335e177d49acc9, type: 2}
+  - {fileID: 2100000, guid: db1c9196a8a3148479fdb0556805706b, type: 2}
+  m_ShapeName: 'Mike      '
+  m_Material: {fileID: 2100000, guid: cd56516b819d3414ba26c6b79e8d9211, type: 2}
 --- !u!65 &435727272
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -338,9 +342,10 @@ GameObject:
   - component: {fileID: 764933911}
   - component: {fileID: 764933910}
   - component: {fileID: 764933909}
+  - component: {fileID: 764933913}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Capsule
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -422,6 +427,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &764933913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764933908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76d41833cf21e104abc4683f59ac5fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors: []
+  m_ShapeName: Parecetamol
+  m_Material: {fileID: 2100000, guid: db1c9196a8a3148479fdb0556805706b, type: 2}
+  uses: Aliviate pain
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

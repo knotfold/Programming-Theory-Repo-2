@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// INHERITANCE
 public class Sphere : Shape
 {
     private float rotationSpeed = 500;
@@ -23,6 +25,7 @@ public class Sphere : Shape
         Spin();
     }
 
+    // ABSTRACTION
     void Spin(){
         transform.Rotate(Vector3.forward * Time.deltaTime * rotationSpeed);
     }

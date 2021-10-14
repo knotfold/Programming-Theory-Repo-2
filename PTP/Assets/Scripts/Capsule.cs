@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// INHERITANCE
 public class Capsule : Shape
 {
    
    [SerializeField] string uses;
 
+
+    // POLYMORPHISM
     public override IEnumerator DisplayText()
     {
         Debug.Log("I am a " + shapeType + " named: " + shapeName + " that you can use for: " + uses);

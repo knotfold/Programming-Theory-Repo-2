@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+// INHERITANCE
 public class Shape : MonoBehaviour
 {
 
+    // ENCAPSULATION
     [SerializeField] Material[] colors;
     protected bool error = false;
 
@@ -35,6 +36,8 @@ public class Shape : MonoBehaviour
         }
     }
 
+
+    // ENCAPSULATION
     [SerializeField]
     private string m_ShapeName;
     public Material material
@@ -57,6 +60,8 @@ public class Shape : MonoBehaviour
 
     [SerializeField]
     private Material m_Material;
+
+    // POLYMORPHISM
     public virtual IEnumerator DisplayText()
     {
         if (error)
@@ -72,6 +77,7 @@ public class Shape : MonoBehaviour
 
     }
 
+    // ABSTRACTION
     protected virtual void InitalizeShapeData()
     {
         if (error)
@@ -93,7 +99,7 @@ public class Shape : MonoBehaviour
     }
 
 
-
+    // ABSTRACTION
     protected void Rotate()
     {
         if (error)
@@ -105,6 +111,7 @@ public class Shape : MonoBehaviour
 
     }
 
+    // ABSTRACTION
     protected void ChangeMaterial()
     {
         if (error)

@@ -9,7 +9,7 @@ public class Cube : Shape
     public override IEnumerator DisplayText()
     {
         
-            Debug.Log("hi i am  " + shapeType + " named: " + shapeName);
+            Debug.Log("hi i am  " + shapeType + " named: " + shapeName + "and i like to mutate");
        
             return base.DisplayText();
         

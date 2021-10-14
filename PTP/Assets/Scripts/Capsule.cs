@@ -9,8 +9,8 @@ public class Capsule : Shape
 
     public override IEnumerator DisplayText()
     {
-        Debug.Log("I am a" + shapeType + " named: " + shapeName + "that you can use for: " + uses);
-        yield return new WaitForSeconds(2);
+        Debug.Log("I am a " + shapeType + " named: " + shapeName + " that you can use for: " + uses);
+        yield return new WaitForSeconds(5);
     }
 
     // Start is called before the first frame update

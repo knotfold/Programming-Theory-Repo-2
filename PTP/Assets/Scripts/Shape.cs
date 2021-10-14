@@ -66,7 +66,7 @@ public class Shape : MonoBehaviour
         bool cycle = true;
         while (cycle)
         {
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(4);
             Debug.Log("Im a " + m_shapeType);
         }
 

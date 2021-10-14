@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cube
   - Capsule
+  - Sphere
   layers:
   - Default
   - TransparentFX
